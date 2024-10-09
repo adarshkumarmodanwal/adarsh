@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarkari Result</title>
+    <link href="img/logo.png" rel="icon">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        .outer {
+            min-height: 5000px;
+            width: 1000px;
+            border: 1px solid red;
+            margin: 0px auto;
+        }
+
+        header {
+            height: 200px;
+            width: 1000;
+            border: 2px solid #ab183d;
+            background: #ab183d;
+
+        }
+
+        .logo {
+            height: 180px;
+            width: 18%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            margin-left: 10px;
+
+
+        }
+
+        .title {
+            height: 100px;
+            width: 73%;
+            float: right;
+            text-align: center;
+            color: white;
+            float: left;
+
+        }
+
+        .heading {
+            font-size: 42px;
+            height: 30px;
+            padding-top: 5px;
+        }
+
+        /* .sub_heading{
+                        border-bottom:2px dotted;
+                        font-size: 18px;
+                       
+
+        } */
+        .sub_heading {
+            border-bottom: 2px dotted white;
+            font-size: 18px;
+            padding-top: 5px;
+
+
+
+        }
+
+        .navbar {
+            height: 50px;
+            width: 1000px;
+            background: #000;
+            line-height: 50px;
+        }
+
+        .navbar ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            height: 50px;
+            width: 121px;
+            text-align: center;
+            border-right: 1px solid #fff;
+
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .latest_news {
+            height: 25px;
+            width: 1000px;
+            text-align: center;
+            line-height: 25px;
+        }
+
+        .latest_news {
+            margin-top: 20px;
+            font-weight: bold;
+
+        }
+
+        .latest_news a {
+            color: blue;
+        }
+
+        .join_us {
+            height: 50px;
+            width: 1000px;
+            text-align: center;
+            line-height: 50px;
+
+        }
+
+        .join_us a {
+            color: #fff;
+            background-color: #0000a0;
+            font-weight: 50px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .online {
+            height: 60px;
+            width: 1000px;
+
+
+        }
+
+        .box {
+            height: 56px;
+            width: 246px;
+            background-color: rgb(9, 248, 9);
+            margin: 2px;
+            float: left;
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        .online.box a {
+            font-weight: bold;
+            color: #fff;
+
+        }
+
+        .box a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            min-height: 585px;
+            height: 400px;
+            width: 1000px;
+            background: #ccc;
+
+        }
+
+        .card {
+            min-height: 500px;
+            height: auto;
+            width: 250px;
+            border: 2px solid #ab183d;
+            flex: left;
+            margin: 60px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+
+
+
+        .card-body ul li {
+            height: 30px;
+            font-size: small;
+            float: left;
+        }
+
+        /* .card {
+            min-height: 500px;
+            height: auto;
+            width: 250px;
+            border: 2px solid #ab183d;
+            flex: left;
+            margin: 60px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+        } */
+
+        .card-header {
+            height: 40px;
+            width: 100%;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 22px;
+            background: #ab183d;
+            padding-left: 10px;
+        }
+
+        .card-body {
+            height: 210px;
+            width: 100%;
+
+        }
+
+        .card-body ul li {
+            height: 30px;
+            font-size: small;
+            float: left;
+        }
+
+
+
+        .card2 {
+            min-height: 500px;
+            height: auto;
+            width: 250px;
+            border: 2px solid #ab183d;
+            flex: left;
+            margin: 60px;
+            float: left;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .card4 {
+
+            height: 300px;
+            width: 250px;
+            border: 2px solid #ab183d;
+            flex: left;
+            margin: 60px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+
+
+        }
+
+        .card-header4 {
+            height: 40px;
+            width: 100%;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 22px;
+            background: #ab183d;
+        }
+
+        .card-body4 ul li {
+            height: 30px;
+            font-size: small;
+            float: left;
+        }
+
+        .card5 {
+
+            height: 700px;
+            width: 250px;
+            border: 2px solid #ab183d;
+            flex: left;
+            margin: 60px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+
+
+        }
+
+        .card6 {
+
+            height: 300px;
+            width: 250px;
+            border: 2px solid #ab183d;
+            flex: left;
+            margin: 60px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .second-container {
+            height: 625px;
+            /* height: 400px; */
+            width: 1000px;
+            /* background: #ccc; */
+            display: flex;
+            padding-left: 10px;
+            justify-content: space-around;
+        }
+
+        .second-card {
+            height: 300px;
+            width: 250px;
+            border: 1px solid #ab183d;
+
+        }
+
+        .box1,
+        .box4,
+        .box7,
+        .box10,
+        .box13,
+        .box16,
+        .box19,
+        .box22,
+        .box25,
+        .box28,
+        .box31 {
+            min-height: 250px;
+            width: 999px;
+            border: 2px solid #ab183d;
+            margin-top: 40px;
+        }
+
+        .box2,
+        .box5,
+        .box8,
+        .box11,
+        .box14,
+        .box17,
+        .box20,
+        .box23,
+        .box26,
+        .box29,
+        .box32 {
+            height: 47px;
+            width: 999px;
+            border: 1px solid #ab183d;
+            background-color: #ab183d;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .box3,
+        .box6,
+        .box9,
+        .box12,
+        .box15,
+        .box18,
+        .box21,
+        .box24,
+        .box27,
+        .box30,
+        .box33 {
+            min-height: 250px;
+            width: 999px;
+            border: none;
+
+        }
+
+        .box3 p,
+        .box6 p,
+        .box9 p,
+        .box12 p,
+        .box15 p,
+        .box18 p,
+        .box21 p,
+        .box24 p,
+        .box27 p,
+        .box30 p,
+        .box33 p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .foter {
+            min-height: 280px;
+            width: 999px;
+            border: 1px solid #ab183d;
+        }
+
+        .foter1,
+        .foter2,
+        .foter3,
+        .foter4 {
+            height: 279px;
+            width: 249px;
+
+            float: left;
+
+        }
+
+        .foter1 h6,
+        .foter2 h6,
+        .foter3 h6,
+        .foter4 h6 {
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 23px;
+            padding-top: -42px;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+        .foter1 p,
+        .foter2 p,
+        .foter3 p,
+        .foter4 p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+
+        }
+
+        .lastheder {
+            height: 45px;
+            width: 1000px;
+            border: 2px solid #ab183d;
+            background-color: #ab183d;
+        }
+
+        .lastheder h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding-right: 626px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="title">
+                <h1 class="heading"><b>SARKARI RESULT</b>
+                    <h1>
+                        <p class=""> <b class="sub_heading">WWW.SARKARIRESULT.COM</b></p>
+            </div>
+        </header>
+        <div class="navbar">
+            <ul>
+                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="#"><b>Latest Jobs</b></a></li>
+                <li><a href="#"><b>Results</b></a></li>
+                <li><a href="#"><b>Admit Card</b></a></li>
+                <li><a href="#"><b>Answer Key</b></a></li>
+                <li><a href="#"><b>syllabus</b></a></li>
+                <li><a href="#"><b>Search</b></a></li>
+                <li><a href="#"><b>Contact Us</b></a></li>
+            </ul>
+        </div>
+        <div class="latest_news">
+            <a href="#"> Sarkari Result Android Apps </a>||
+            <a href="#"> Sarkari Result Youtube Channel </a>||
+            <a href="#"> Sarkari Result Apple / IOS Apps</a>||
+            <a href="#"> Follow Instagram</a><br>
+
+            <marquee behavior="alternate" scrollamount="15" onmousemove="stop()" onmouseleave="start()">
+                <a href="#"> UPSC CDS II Admit Card 2024 </a>||
+                <a href="#">IPR RES MTS Online Form 2024</a> ||
+                <a href="#"> MP CPCT Online Form 2024</a>
+                <a href="#">Admit Card 2024</a> || <br>
+            </marquee>
+            <marquee behavior="alternate" scrollamount="15" onmousemove="stop()" onmouseleave="start()">
+                <a href="#">IPR RES MTS Online Form 2024</a> ||
+                <a href="#">IPR RES MTS Online Form 2024</a> ||
+                <a href="#"> MP CPCT Online Form 2024</a>||<br>
+
+            </marquee>
+            <marquee behavior="alternate" scrollamount="11" onmousemove="stop()" onmouseleave="start()">
+                <a href="#">RPSC RAS Online Form 2024 </a>||
+                <a href="#"> Navy SSR Medical Assistant Online Form 2024</a> ||
+                <a href="#"> CISF Constable Fire Online Form 2024</a>
+        </div>
+        </marquee>
+        <div class="join_us">
+            <a href="#">join on Facebook</a>
+        </div>
+        <div class="online">
+            <div class="box" style="background:#4C5DE4 ;">
+                <a href="#">Punjab Haryana HC
+                    PEON Apply Online</a>
+            </div>
+            <div class="box" style="background:#ba3005;">
+                <a href="#"> Navy 10+2 SSR MA
+                    Apply Online</a>
+            </div>
+
+
+            <div class="box" style="background:#b3ba05;">
+                <a href="#">
+
+
+                    GATE 2025
+                    Apply Online</a>
+            </div>
+            <div class="box" style="background:#ffd700 ;">
+                <a href="#">CISF Constable Fire
+                    Apply Online</a>
+            </div>
+            <div class="box" style="background:#6fa287;">
+                <a href="#">UP Scholarship 2024
+                    Apply Online</a>
+
+            </div>
+            <div class="box" style="background:#05baa8;">
+                <a href="#">RRB Paramedical
+                    Apply Online</a>
+            </div>
+            <div class="box" style="background:#056eba;">
+                <a href="#">UPBED 2024
+                    Online Counselling</a>
+            </div>
+            <div class="box" style="background:#fb10ed#2605ba; color:white">
+                <a href="#">SSC GD Constable
+                    Apply Online</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    Result
+                </div>
+                <div class="card-body">
+
+                    <ul>
+
+                        <li>
+                            <a href="#">SSC 10+2 CHSL Tier I Exam </a>
+                        </li>
+                        <li>
+                            <a href="#">CBSE Various Post Result 2024 </a>
+                        </li>
+                        <li>
+                            <a href="#">RSMSSB Forest Guard 2020</a>
+                        </li>
+                        <li>
+                            <a href="#">National Insurance AO Phase</a>
+                        </li>
+                        <li>
+                            <a href="#">NEET PG 2024 Score Card</a>
+                        </li>
+                        <li>
+                            <a href="#">UPSC EPFO Account Officer </a>
+                        </li>
+                        <li>
+                            <a href="#">Rajasthan Police Constable </a>
+                        </li>
+                        <li>
+                            <a href="#">SSC CPO SI 2024 Paper I </a>
+                        </li>
+                        <li>
+                            <a href="#">BPSC 69th Mains Exam Result </a>
+                        </li>
+                        <li>
+                            <a href="#">SSC Selection Post XII Exam</a>
+                        </li>
+                        <li>
+                            <a href="#">UPPSC Civil Judge 2022 </a>
+                        </li>
+                        <li>
+                            <a href="#">RSMSSB REET L1 Primary Level</a>
+                        </li>
+                        <li>
+                            <a href="#">BPSC 32 Civil Judge Mains </a>
+                        </li>
+                        <li>
+                            <a href="#">UP GNM / ANM Training Result </a>
+                        </li>
+                        <li>
+                            <a href="#">Chandigarh TGT Result 2024 </a>
+                        </li>
+
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    Admit card
+                </div>
+                <div class="card-body">
+
+                    <ul>
+
+                        <li>
+                            <a href="#">SSC 10+2 CHSL Tier I Exam </a>
+                        </li>
+                        <li>
+                            <a href="#">CBSE Various Post Result 2024 </a>
+                        </li>
+                        <li>
+                            <a href="#">RSMSSB Forest Guard 2020</a>
+                        </li>
+                        <li>
+                            <a href="#">National Insurance AO Phase</a>
+                        </li>
+                        <li>
+                            <a href="#">NEET PG 2024 Score Card</a>
+                        </li>
+                        <li>
+                            <a href="#">UPSC EPFO Account Officer </a>
+                        </li>
+                        <li>
+                            <a href="#">Rajasthan Police Constable </a>
+                        </li>
+                        <li>
+                            <a href="#">SSC CPO SI 2024 Paper I </a>
+                        </li>
+                        <li>
+                            <a href="#">BPSC 69th Mains Exam Result </a>
+                        </li>
+                        <li>
+                            <a href="#">SSC Selection Post XII Exam</a>
+                        </li>
+                        <li>
+                            <a href="#">UPPSC Civil Judge 2022 </a>
+                        </li>
+                        <li>
+                            <a href="#">RSMSSB REET L1 Primary Level</a>
+                        </li>
+                        <li>
+                            <a href="#">BPSC 32 Civil Judge Mains </a>
+                        </li>
+                        <li>
+                            <a href="#">UP GNM / ANM Training Result </a>
+                        </li>
+                        <li>
+                            <a href="#">Chandigarh TGT Result 2024 </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    Latest Jobs
+                </div>
+                <div class="card-body">
+
+                    <ul>
+
+                        <li>
+                            <a href="#">SSC 10+2 CHSL Tier I Exam </a>
+                        </li>
+                        <li>
+                            <a href="#">CBSE Various Post Result 2024 </a>
+                        </li>
+                        <li>
+                            <a href="#">RSMSSB Forest Guard 2020</a>
+                        </li>
+                        <li>
+                            <a href="#">National Insurance AO Phase</a>
+                        </li>
+                        <li>
+                            <a href="#">NEET PG 2024 Score Card</a>
+                        </li>
+                        <li>
+                            <a href="#">UPSC EPFO Account Officer </a>
+                        </li>
+                        <li>
+                            <a href="#">Rajasthan Police Constable </a>
+                        </li>
+                        <li>
+                            <a href="#">SSC CPO SI 2024 Paper I </a>
+                        </li>
+                        <li>
+                            <a href="#">BPSC 69th Mains Exam Result </a>
+                        </li>
+                        <li>
+                            <a href="#">SSC Selection Post XII Exam</a>
+                        </li>
+                        <li>
+                            <a href="#">UPPSC Civil Judge 2022 </a>
+                        </li>
+                        <li>
+                            <a href="#">RSMSSB REET L1 Primary Level</a>
+                        </li>
+                        <li>
+                            <a href="#">BPSC 32 Civil Judge Mains </a>
+                        </li>
+                        <li>
+                            <a href="#">UP GNM / ANM Training Result </a>
+                        </li>
+                        <li>
+                            <a href="#">Chandigarh TGT Result 2024 </a>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- ------------------------second contaner---------- -->
+        <div class="second-container">
+
+            <div class="second-card">
+                <div class="second-card2" style="height:300px">
+                    <div class="card-header">
+                        Admit card
+                    </div>
+                    <div class="card-body" height>
+
+                        <ul>
+
+                            <li>
+                                <a href="#">SSC 10+2 CHSL Tier I Exam </a>
+                            </li>
+                            <li>
+                                <a href="#">CBSE Various Post Result 2024 </a>
+                            </li>
+                            <li>
+                                <a href="#">RSMSSB Forest Guard 2020</a>
+                            </li>
+                            <li>
+                                <a href="#">National Insurance AO Phase</a>
+                            </li>
+                            <li>
+                                <a href="#">NEET PG 2024 Score Card</a>
+                            </li>
+                            <li>
+                                <a href="#">UPSC EPFO Account Officer </a>
+                            </li>
+                            <li>
+                                <a href="#">Rajasthan Police Constable </a>
+                            </li>
+                            <li>
+                                <a href="#">SSC CPO SI 2024 Paper I </a>
+                            </li>
+                    </div>
+
+                    <div class="second-card2"
+                        style="height:300px; border:1px solid #ab183d; margin-top:20px; float: left;">
+                        <div class="card-header">
+                            Admit card
+                        </div>
+                        <div class="card-body" height>
+
+                            <ul>
+
+                                <li>
+                                    <a href="#">SSC 10+2 CHSL Tier I Exam </a>
+                                </li>
+                                <li>
+                                    <a href="#">CBSE Various Post Result 2024 </a>
+                                </li>
+                                <li>
+                                    <a href="#">RSMSSB Forest Guard 2020</a>
+                                </li>
+                                <li>
+                                    <a href="#">National Insurance AO Phase</a>
+                                </li>
+                                <li>
+                                    <a href="#">NEET PG 2024 Score Card</a>
+                                </li>
+                                <li>
+                                    <a href="#">UPSC EPFO Account Officer </a>
+                                </li>
+                                <li>
+                                    <a href="#">Rajasthan Police Constable </a>
+                                </li>
+                                <li>
+                                    <a href="#">SSC CPO SI 2024 Paper I </a>
+                                </li>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!------------------------second card link  start----------------- -->
+            <div class="second-card">
+                <div class="second-card2" style="height:300px">
+                    <div class="card-header">
+                        Admit card
+                    </div>
+                    <div class="card-body" height>
+
+                        <ul>
+
+                            <li>
+                                <a href="#">SSC 10+2 CHSL Tier I Exam </a>
+                            </li>
+                            <li>
+                                <a href="#">CBSE Various Post Result 2024 </a>
+                            </li>
+                            <li>
+                                <a href="#">RSMSSB Forest Guard 2020</a>
+                            </li>
+                            <li>
+                                <a href="#">National Insurance AO Phase</a>
+                            </li>
+                            <li>
+                                <a href="#">NEET PG 2024 Score Card</a>
+                            </li>
+                            <li>
+                                <a href="#">UPSC EPFO Account Officer </a>
+                            </li>
+                            <li>
+                                <a href="#">Rajasthan Police Constable </a>
+                            </li>
+                            <li>
+                                <a href="#">SSC CPO SI 2024 Paper I </a>
+                            </li>
+                    </div>
+                </div>
+
+
+                <div class="second-card2" style="height:300px; border:1px solid #ab183d; margin-top:20px; float: left;">
+                    <div class="card-header">
+                        Admit card
+                    </div>
+                    <div class="card-body" height>
+
+                        <ul>
+
+                            <li>
+                                <a href="#">SSC 10+2 CHSL Tier I Exam </a>
+                            </li>
+                            <li>
+                                <a href="#">CBSE Various Post Result 2024 </a>
+                            </li>
+                            <li>
+                                <a href="#">RSMSSB Forest Guard 2020</a>
+                            </li>
+                            <li>
+                                <a href="#">National Insurance AO Phase</a>
+                            </li>
+                            <li>
+                                <a href="#">NEET PG 2024 Score Card</a>
+                            </li>
+                            <li>
+                                <a href="#">UPSC EPFO Account Officer </a>
+                            </li>
+                            <li>
+                                <a href="#">Rajasthan Police Constable </a>
+                            </li>
+                            <li>
+                                <a href="#">SSC CPO SI 2024 Paper I </a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+            <!------------------------second card link  end----------------- -->
+
+
+
+            <div class="card">
+                <div class="card-header">
+                    Latest Jobs
+                </div>
+                <div class="card-body">
+
+                    <ul>
+
+                        <li>
+                            <a href="#">SSC 10+2 CHSL Tier I Exam </a>
+                        </li>
+                        <li>
+                            <a href="#">CBSE Various Post Result 2024 </a>
+                        </li>
+                        <li>
+                            <a href="#">RSMSSB Forest Guard 2020</a>
+                        </li>
+                        <li>
+                            <a href="#">National Insurance AO Phase</a>
+                        </li>
+                        <li>
+                            <a href="#">NEET PG 2024 Score Card</a>
+                        </li>
+                        <li>
+                            <a href="#">UPSC EPFO Account Officer </a>
+                        </li>
+                        <li>
+                            <a href="#">Rajasthan Police Constable </a>
+                        </li>
+                        <li>
+                            <a href="#">SSC CPO SI 2024 Paper I </a>
+                        </li>
+                        <li>
+                            <a href="#">BPSC 69th Mains Exam Result </a>
+                        </li>
+                        <li>
+                            <a href="#">SSC Selection Post XII Exam</a>
+                        </li>
+                        <li>
+                            <a href="#">UPPSC Civil Judge 2022 </a>
+                        </li>
+                        <li>
+                            <a href="#">RSMSSB REET L1 Primary Level</a>
+                        </li>
+                        <li>
+                            <a href="#">BPSC 32 Civil Judge Mains </a>
+                        </li>
+                        <li>
+                            <a href="#">UP GNM / ANM Training Result </a>
+                        </li>
+                        <li>
+                            <a href="#">Chandigarh TGT Result 2024 </a>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="box1">
+            <div class="box2">
+                <h1>Sarkari Result : Resources to Help Indians Get Government Jobs (Sarkari Job)</h1>
+            </div>
+            <div class="box3">
+                <p>The future is uncertain, but a government job, Sarkari Jobs can help you secure your future. Click
+                    for valuable resources and help from Sarkari Result.
+
+                    Did you know that over 1.5 million people lost their jobs in August 2021 in rural and urban India?
+                    Yes, the COVID-19 pandemic has hit the job market hard. Small businesses and multinationals alike
+                    have had to reconsider their staffing requirements.
+
+
+                    Are you an unemployed Indian citizen because of the pandemic and fluctuating job market?
+
+
+                    Are you working for a multinational company going through restructuring and considering your next
+                    steps?
+
+                    Are you a recent graduate looking to find your first job?
+
+                    Are you wondering if a government job is right for you?
+
+                    You've come to the right place! At Sarkari Result, we will show you the benefits of an Indian
+                    government job and help you to find a government job that's stable, long-term, and right for you!
+                    In India, a Sarkari Naukri (or an Indian government job) is highly sought-after. It's the ultimate
+                    career goal, offering long-term security, good benefits, and friendly co-workers.
+
+                    More than that, an Indian government job offers an opportunity to live a life of purpose.
+
+                    It's a way for you to give back to your community.
+
+                    According to the Centre for Monitoring Indian Economy Pvt. Ltd. (CMIE), the unemployment rate in
+                    India increased from 6.5% in November 2020 to 7.75% in October 2021. In this fluctuating market,
+                    there has been an increase in the demand for the stability and permanence offered by a Sarkari
+                    Naukri.
+
+                    In addition, government jobs in India can be pretty lucrative offering competitive salaries,
+                    benefits, and pensions. Some of the highest-paid jobs in the Indian government include the Indian
+                    Administrative Services (IAS), Indian Foreign Services (IFS), and Indian Police Services (IPS).
+
+
+                    Keep in mind that these jobs are also highly competitive with a complex application process!
+
+                    What Kind of Government Jobs Can I Get?
+                    There are a wide variety of government jobs in India. It depends on your interests, but a job in the
+                    Indian government can range from policy-making, public administration, military, law, engineering,
+                    and even teaching. Some of the more highly-paid and in-demand positions are discussed below to give
+                    you a sense of their requirements and salary expectations.
+
+                    1. Indian Administrative Services (IAS) and Indian Foreign Services (IFS) Jobs : The role of an IAS
+                    officer may include advising the ministers on various policy issues, implementing policies of the
+                    government, collecting revenue, and supervising public spending. An IFS officer manages foreign
+                    relations in India with more than 160 Indian Diplomatic Missions and International Organizations
+                    around the world. The starting monthly salary of an IAS or IFS officer is about INR 56,100.
+
+
+                    2. Indian Police Services (IPS) Jobs : A role with the IPS involves safeguarding the public,
+                    maintaining law and order, and detecting and preventing crime. The role can be with the various
+                    agencies and branches including the Research and Analysis Wing (R&AW), Intelligence Bureau (IB),
+                    Central Bureau of Investigation (CBI), and Criminal Investigation Department (CID). To be eligible
+                    for a job with IPS, there are additional requirements, including physical standards. Physical
+                    eligibility includes minimum height for men and women, minimum chest girth for men and women,
+                    restriction on vision impairments including myopia limited to less than -4.00, and hyper myopia not
+                    exceeding +4.00. According to Payscale, an entry-level police constable with less than 1-year
+                    experience can earn an average total compensation of INR 255,094. This includes tips, bonuses, and
+                    overtime pay.
+
+                    3. Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not
+                    surprising that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad
+                    Bank, HDFC, and ICICI are highly sought after. A job in the banking sector could either be a
+                    clerical position such as typists, data entry operators, cashiers, or clerks or a probationary
+                    officer (PO) role. As a PO, the candidate will be under probation during the training period and
+                    will be hired following the probation based on performance. During the training period, the
+                    candidate will be trained in accounting, finance, billing, investment, and revenue collection. A PO
+                    role allows opportunities for career growth to middle and senior management based on performance and
+                    additional examinations. The starting monthly salary of a PO is about INR 57,000 including
+                    allowances.
+
+
+                    4. Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such
+                    as Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                    physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances
+                    and promotions will increase this salary. There are also several agricultural, engineering, and
+                    research jobs with their own set of rules and requirements. These can get very complicated, but
+                    Sarkari Result does all the work for you and lists the various jobs ranging from a Rajasthani police
+                    constable to Allahabad High Court Review Officer. Each job posting contains all the details you
+                    would need to be able to apply for the position with ease.</p>
+
+            </div>
+        </div>
+
+        <div class="box4">
+            <div class="box5">
+                <h1>Why Should I Consider a Government Job?</h1>
+            </div>
+            <div class="box6">
+                <p> 3. Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not
+                    surprising that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad
+                    Bank, HDFC, and ICICI are highly sought after. A job in the banking sector could either be a
+                    clerical position such as typists, data entry operators, cashiers, or clerks or a probationary
+                    officer (PO) role. As a PO, the candidate will be under probation during the training period and
+                    will be hired following the probation based on performance. During the training period, the
+                    candidate will be trained in accounting, finance, billing, investment, and revenue collection. A PO
+                    role allows opportunities for career growth to middle and senior management based on performance and
+                    additional examinations. The starting monthly salary of a PO is about INR 57,000 including
+                    allowances.
+
+
+                    4. Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such
+                    as Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                    physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances
+                    and promotions will increase this salary. There are also several agricultural, engineering, and
+                    research jobs with their own set of rules and requirements. These can get very complicated, but
+                    Sarkari Result does all the work for you and lists the various jobs ranging from a Rajasthani police
+                    constable to Allahabad High Court Review Officer. Each job posting contains all the details you
+                    would need to be able to apply for the position with ease.</p>
+            </div>
+        </div>
+        <div class="box7">
+            <div class="box8">
+                <h1>What Kind of Government Jobs Can I Get?</h1>
+            </div>
+            <div class="box9">
+                <p> 3. Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not
+                    surprising that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad
+                    Bank, HDFC, and ICICI are highly sought after. A job in the banking sector could either be a
+                    clerical position such as typists, data entry operators, cashiers, or clerks or a probationary
+                    officer (PO) role. As a PO, the candidate will be under probation during the training period and
+                    will be hired following the probation based on performance. During the training period, the
+                    candidate will be trained in accounting, finance, billing, investment, and revenue collection. A PO
+                    role allows opportunities for career growth to middle and senior management based on performance and
+                    additional examinations. The starting monthly salary of a PO is about INR 57,000 including
+                    allowances.
+
+
+                    4. Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such
+                    as Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                    physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances
+                    and promotions will increase this salary. There are also several agricultural, engineering, and
+                    research jobs with their own set of rules and requirements. These can get very complicated, but
+                    Sarkari Result does all the work for you and lists the various jobs ranging from a Rajasthani police
+                    constable to Allahabad High Court Review Officer. Each job posting contains all the details you
+                    would need to be able to apply for the position with ease.</p>
+            </div>
+        </div>
+        <div class="box10">
+            <div class="box11">
+                <h1>What Kind of Government Jobs Can I Get?</h1>
+            </div>
+            <div class="box12">
+                <p> 3. Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not
+                    surprising that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad
+                    Bank, HDFC, and ICICI are highly sought after. A job in the banking sector could either be a
+                    clerical position such as typists, data entry operators, cashiers, or clerks or a probationary
+                    officer (PO) role. As a PO, the candidate will be under probation during the training period and
+                    will be hired following the probation based on performance. During the training period, the
+                    candidate will be trained in accounting, finance, billing, investment, and revenue collection. A PO
+                    role allows opportunities for career growth to middle and senior management based on performance and
+                    additional examinations. The starting monthly salary of a PO is about INR 57,000 including
+                    allowances.
+
+
+                    4. Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such
+                    as Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                    physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances
+                    and promotions will increase this salary. There are also several agricultural, engineering, and
+                    research jobs with their own set of rules and requirements. These can get very complicated, but
+                    Sarkari Result does all the work for you and lists the various jobs ranging from a Rajasthani police
+                    constable to Allahabad High Court Review Officer. Each job posting contains all the details you
+                    would need to be able to apply for the position with ease.</p>
+            </div>
+        </div>
+        <div class="box13">
+            <div class="box14">
+                <h1>What Kind of Government Jobs Can I Get?</h1>
+            </div>
+            <div class="box15">
+                <p> 3. Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not
+                    surprising that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad
+                    Bank, HDFC, and ICICI are highly sought after. A job in the banking sector could either be a
+                    clerical position such as typists, data entry operators, cashiers, or clerks or a probationary
+                    officer (PO) role. As a PO, the candidate will be under probation during the training period and
+                    will be hired following the probation based on performance. During the training period, the
+                    candidate will be trained in accounting, finance, billing, investment, and revenue collection. A PO
+                    role allows opportunities for career growth to middle and senior management based on performance and
+                    additional examinations. The starting monthly salary of a PO is about INR 57,000 including
+                    allowances.
+
+
+                    4. Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such
+                    as Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                    physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances
+                    and promotions will increase this salary. There are also several agricultural, engineering, and
+                    research jobs with their own set of rules and requirements. These can get very complicated, but
+                    Sarkari Result does all the work for you and lists the various jobs ranging from a Rajasthani police
+                    constable to Allahabad High Court Review Officer. Each job posting contains all the details you
+                    would need to be able to apply for the position with ease.</p>
+            </div>
+        </div>
+        <div class="box16">
+            <div class="box17">
+                <h1>Information about jobs and results in Uttar Pradesh on Sarkari Result UP</h1>
+            </div>
+            <div class="box18">
+                <p> 3. Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not
+                    surprising that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad
+                    Bank, HDFC, and ICICI are highly sought after. A job in the banking sector could either be a
+                    clerical position such as typists, data entry operators, cashiers, or clerks or a probationary
+                    officer (PO) role. As a PO, the candidate will be under probation during the training period and
+                    will be hired following the probation based on performance. During the training period, the
+                    candidate will be trained in accounting, finance, billing, investment, and revenue collection. A PO
+                    role allows opportunities for career growth to middle and senior management based on performance and
+                    additional examinations. The starting monthly salary of a PO is about INR 57,000 including
+                    allowances.
+
+
+                    4. Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such
+                    as Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                    physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances
+                    and promotions will increase this salary. There are also several agricultural, engineering, and
+                    research jobs with their own set of rules and requirements. These can get very complicated, but
+                    Sarkari Result does all the work for you and lists the various jobs ranging from a Rajasthani police
+                    constable to Allahabad High Court Review Officer. Each job posting contains all the details you
+                    would need to be able to apply for the position with ease.</p>
+            </div>
+        </div>
+        <div class="box19">
+            <div class="box20">
+                <h1>Sarkari Result - Online Application Process</h1>
+            </div>
+            <div class="box21">
+                <p> 3. Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not
+                    surprising that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad
+                    Bank, HDFC, and ICICI are highly sought after. A job in the banking sector could either be a
+                    clerical position such as typists, data entry operators, cashiers, or clerks or a probationary
+                    officer (PO) role. As a PO, the candidate will be under probation during the training period and
+                    will be hired following the probation based on performance. During the training period, the
+                    candidate will be trained in accounting, finance, billing, investment, and revenue collection. A PO
+                    role allows opportunities for career growth to middle and senior management based on performance and
+                    additional examinations. The starting monthly salary of a PO is about INR 57,000 including
+                    allowances.
+
+
+                    4. Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such
+                    as Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                    physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances
+                    and promotions will increase this salary. There are also several agricultural, engineering, and
+                    research jobs with their own set of rules and requirements. These can get very complicated, but
+                    Sarkari Result does all the work for you and lists the various jobs ranging from a Rajasthani police
+                    constable to Allahabad High Court Review Officer. Each job posting contains all the details you
+                    would need to be able to apply for the position with ease.</p>
+            </div>
+        </div>
+        <div class="box22">
+            <div class="box23">
+                <h1>Sarkari Result Bihar Latest Jobs, Sarkari Naukri 2023</h1>
+            </div>
+            <div class="box24">
+                <p> 3. Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not
+                    surprising that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad
+                    Bank, HDFC, and ICICI are highly sought after. A job in the banking sector could either be a
+                    clerical position such as typists, data entry operators, cashiers, or clerks or a probationary
+                    officer (PO) role. As a PO, the candidate will be under probation during the training period and
+                    will be hired following the probation based on performance. During the training period, the
+                    candidate will be trained in accounting, finance, billing, investment, and revenue collection. A PO
+                    role allows opportunities for career growth to middle and senior management based on performance and
+                    additional examinations. The starting monthly salary of a PO is about INR 57,000 including
+                    allowances.
+
+
+                    4. Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such
+                    as Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                    physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances
+                    and promotions will increase this salary. There are also several agricultural, engineering, and
+                    research jobs with their own set of rules and requirements. These can get very complicated, but
+                    Sarkari Result does all the work for you and lists the various jobs ranging from a Rajasthani police
+                    constable to Allahabad High Court Review Officer. Each job posting contains all the details you
+                    would need to be able to apply for the position with ease.</p>
+            </div>
+        </div>
+        <div class="box25">
+            <div class="box26">
+                <h1>Government job information to be held in Delhi state on Sarkari Result Delhi.</h1>
+            </div>
+            <div class="box27">
+                <p> 3. Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not
+                    surprising that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad
+                    Bank, HDFC, and ICICI are highly sought after. A job in the banking sector could either be a
+                    clerical position such as typists, data entry operators, cashiers, or clerks or a probationary
+                    officer (PO) role. As a PO, the candidate will be under probation during the training period and
+                    will be hired following the probation based on performance. During the training period, the
+                    candidate will be trained in accounting, finance, billing, investment, and revenue collection. A PO
+                    role allows opportunities for career growth to middle and senior management based on performance and
+                    additional examinations. The starting monthly salary of a PO is about INR 57,000 including
+                    allowances.
+
+
+                    4. Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such
+                    as Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                    physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances
+                    and promotions will increase this salary. There are also several agricultural, engineering, and
+                    research jobs with their own set of rules and requirements. These can get very complicated, but
+                    Sarkari Result does all the work for you and lists the various jobs ranging from a Rajasthani police
+                    constable to Allahabad High Court Review Officer. Each job posting contains all the details you
+                    would need to be able to apply for the position with ease.</p>
+            </div>
+        </div>
+        <div class="box28">
+            <div class="box29">
+                <h1>What Can Sarkari Result Do to Help Me?</h1>
+            </div>
+            <div class="box30">
+                <p> 3. Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not
+                    surprising that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad
+                    Bank, HDFC, and ICICI are highly sought after. A job in the banking sector could either be a
+                    clerical position such as typists, data entry operators, cashiers, or clerks or a probationary
+                    officer (PO) role. As a PO, the candidate will be under probation during the training period and
+                    will be hired following the probation based on performance. During the training period, the
+                    candidate will be trained in accounting, finance, billing, investment, and revenue collection. A PO
+                    role allows opportunities for career growth to middle and senior management based on performance and
+                    additional examinations. The starting monthly salary of a PO is about INR 57,000 including
+                    allowances.
+
+
+                    4. Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such
+                    as Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                    physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances
+                    and promotions will increase this salary. There are also several agricultural, engineering, and
+                    research jobs with their own set of rules and requirements. These can get very complicated, but
+                    Sarkari Result does all the work for you and lists the various jobs ranging from a Rajasthani police
+                    constable to Allahabad High Court Review Officer. Each job posting contains all the details you
+                    would need to be able to apply for the position with ease.</p>
+            </div>
+        </div>
+        <div class="box31">
+            <div class="box32">
+                <h1>Why trust SarkariResult.com for Sarkari Result?</h1>
+            </div>
+            <div class="box34">
+                <p> 3. Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not
+                    surprising that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad
+                    Bank, HDFC, and ICICI are highly sought after. A job in the banking sector could either be a
+                    clerical position such as typists, data entry operators, cashiers, or clerks or a probationary
+                    officer (PO) role. As a PO, the candidate will be under probation during the training period and
+                    will be hired following the probation based on performance. During the training period, the
+                    candidate will be trained in accounting, finance, billing, investment, and revenue collection. A PO
+                    role allows opportunities for career growth to middle and senior management based on performance and
+                    additional examinations. The starting monthly salary of a PO is about INR 57,000 including
+                    allowances.
+
+
+                    4. Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such
+                    as Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                    physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances
+                    and promotions will increase this salary. There are also several agricultural, engineering, and
+                    research jobs with their own set of rules and requirements. These can get very complicated, but
+                    Sarkari Result does all the work for you and lists the various jobs ranging from a Rajasthani police
+                    constable to Allahabad High Court Review Officer. Each job posting contains all the details you
+                    would need to be able to apply for the position with ease.</p>
+            </div>
+        </div>
+        <div class="foter">
+            <div class="foter1">
+                <h6>Quick Links</h6>
+
+                <p>Sarkari Result @Telegram</p>
+                <p>Sarkari Result @WhatsApp</p>
+                <p>Sarkari Result @Instagram</p>
+                <p>Sarkari Result @Threads</p>
+
+            </div>
+            <div class="foter2">
+                <h6>Apps</h6>
+                <p>Android App</p>
+                <p> Apple IOS App</p>
+            </div>
+            <div class="foter3">
+                <h6>More</h6>
+                <p>BPSC</p>
+                <p> UP-scholorship</p>
+                <p>UPSC</p>
+                <p>RPSC</p>
+
+
+            </div>
+            <div class="foter4">
+                <h6>AboutUs</h6>
+
+                <p>CCC</p>
+                <p>UP-scholorship</p>
+                <p>IBPS</p>
+                <p>SSC</p>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="lastheder">
+            <h5>&copy;Sarkari Result 2024 made by ADARSH MODANWAL &nbsp;(Instagram: mr_adarsh_official) </h5>
+        </div>
+    </div>
+</body>
+
+</html>

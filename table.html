@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table{
+                width: 100%;
+                margin: 50 auto;
+                border: 2px solid black;
+                border-collapse: separate;
+                caption-side: bottom;
+                table-layout: fixed;
+                empty-cells: hide;
+                border-spacing: 20px;
+
+        }
+        th,td{
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            overflow:fixed;
+        }
+        caption{
+            padding: 20 0 0;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 align="center">table</h1>
+    <hr>
+    <table border="2" cellpadding="20" cellspacing="30">
+        <thead>
+            <tr>
+                <th>S. No.</th>
+                <th>name</th>
+                <th>Course</th>
+                <th>Desination</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td rowspan="4">Adarsh</td>
+                <td>APP22092</td>
+                <td>Full Stack</td>
+                <td>Student</td>
+            </tr>
+            <tr></tr>
+                <td>1</td>
+                <td rowspan="4">Adarsh</td>
+                <td>APP22092</td>
+                <td>Full Stack</td>
+                <td>Student</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>App24092</td>
+                <td>Full Stack</td>
+                <td>Student</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" align="center">Note: All Student in Techsima</td>
+            </tr>
+        </tfoot>
+        <capation>table 1.1 Student table</capation>
+    </table>
+</body>
+</html>

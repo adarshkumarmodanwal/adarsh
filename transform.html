@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div:first-child {
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            background-color: red;
+            margin: 0 auto;
+            transition: all ease 4s;
+     
+        }
+
+        div:first-child:hover {
+
+            background-image: url(../media/a9.jpg);
+            transform: scale(0.5);
+        }
+
+
+        div:last-child {
+            height: 200px;
+            width: 200px;
+            border: 2px solid  greenyellow;
+            background-color: greenyellow;
+            transition: all  ease-in-out 2s;
+            margin: 0 auto;
+        }
+
+     div:last-child:hover{
+            background-image: url(../media/s4.jpeg);
+            transform:skew(360deg);
+        }
+        div:nth-child(2){
+            height: 200px;
+            width: 200px;
+            border: 2px solid gold;
+            background-color: gold;
+            margin: 0 auto;
+            transition: all ease 4s;
+          
+        }
+
+        div:nth-child(2):hover{
+
+            background-image: url(../media/a9.jpg);
+            transform:skew(360deg);
+        }
+        div:nth-child(3){
+            height: 200px;
+            width: 200px;
+            border: 2px solid skyblue;
+            background-color:skyblue;
+            margin: 0 auto;
+            transition: all ease 4s;
+        
+        }
+
+        div:nth-child(3):hover{
+
+            background-image: url(../media/a9.jpg);
+            transform:translate(50px);
+        }
+        div:nth-child(4){
+            height: 200px;
+            width: 200px;
+            border: 2px solid blue;
+            background-color:blue;
+             margin: 0 auto; 
+            transition: all ease 4s;
+   
+        }
+
+        div:nth-child(4):hover{
+
+            background-image: url(../media/a9.jpg);
+            transform: scale(0.5) translate(60px) skew(360deg) rotate(360deg);
+        }
+        div:nth-child(5){
+            height: 200px;
+            width: 200px;
+            border: 2px solid blue;
+            background-color:blue;
+             /* margin: 0 auto;  */
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+            transition: all ease 4s;
+   
+        }
+        div:nth-child(5):hover{
+
+background-image: url(../media/a9.jpg);
+transform: scale(0.5) translate(60px) skew(360deg) rotate(360deg);
+}
+
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

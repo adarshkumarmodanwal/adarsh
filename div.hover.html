@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 400px;
+            width: 400px;
+            border: 10px solid#000;
+            margin: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        .box img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+        }
+        .box-inner{
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(255,255,255,.9);
+                    position: absolute;
+                    top: -100%;
+                    transition: all ease 2s;
+        }
+        p{
+          font-size: 20px;
+          padding: 20px;
+
+        }
+        .box:hover .box-inner{
+                    top:0px;
+
+                }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../media/d.jpg" alt="image">
+        <div class="box-inner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus inventore aspernatur quae molestiae, mollitia aliquid eius odit maiores consequatur labore rerum, sapiente cum quas voluptatem? Alias numquam minima esse doloremque.10</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus inventore aspernatur quae molestiae, mollitia aliquid eius odit maiores consequatur labore rerum, sapiente cum quas voluptatem? Alias numquam minima esse doloremque.10</p>
+        </div>
+    </div>
+    
+</body>
+</html>

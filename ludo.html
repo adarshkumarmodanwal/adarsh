@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ludo</title>
+    <style>
+        .outer {
+            height: 700px;
+            width: 800px;
+            border: 2px solid white;
+            background-color: aqua;
+        }
+
+        .row1 {
+            height: 280px;
+            width: 100%;
+            border: 2px solid white;
+
+        }
+
+        .boxred {
+            height: 277px;
+            width: 311px;
+            border: 35px solid red;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .red {
+            height: 80px;
+            width: 80px;
+            border-radius: 40px;
+            background-color: red;
+            float: left;
+            margin-left: 20px;
+            margin-right: 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+
+        }
+
+        .green {
+            height: 80px;
+            width: 80px;
+            border-radius: 40px;
+            background-color: green;
+            float: left;
+            margin-left: 20px;
+            margin-right: 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+
+        }
+
+        .blue {
+            height: 80px;
+            width: 80px;
+            border-radius: 40px;
+            background-color: blue;
+            float: left;
+            margin-left: 20px;
+            margin-right: 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+
+        }
+
+        .yellow {
+            height: 80px;
+            width: 80px;
+            border-radius: 40px;
+            background-color: yellow;
+            float: left;
+            margin-left: 20px;
+            margin-right: 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+
+        }
+
+        .path1 {
+            height: 277px;
+            width: 168px;
+            border: 2px solid white;
+            float: left;
+            
+        }
+
+        .boxgreen {
+            height: 277px;
+            width: 311px;
+            border: 35px solid green;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .row2 {
+            height: 103px;
+            width: 100%;
+            border: 2px solid white;
+            float: left;
+
+        }
+
+        .path2 {
+            height: 100px;
+            width: 311px;
+            border: 2px solid white;
+            float: left;
+        }
+
+        .mainbox {
+            height: 100px;
+            width: 170px;
+            float: left;
+            border-bottom: 150px;
+            border-top: 150px;
+            border-left: 150;
+            border-right: 150px;
+
+
+        }
+
+        .mainboxcolor {
+            height: 0px;
+            width: 0px;
+
+            border-bottom: 60px solid blue;
+            border-top: 60px solid green;
+            border-left: 60px solid yellow;
+            border-right: 60px solid red;
+            margin: 100px auto;
+
+        }
+
+
+        .path3 {
+            height: 100px;
+            width: 309px;
+            border: 2px solid white;
+            float: left;
+        }
+
+
+        .row3 {
+            height: 310px;
+            width: 100%;
+            border: 2px solid white;
+            float: left;
+        }
+
+        .boxblue {
+            height: 306px;
+            width: 311px;
+            border: 35px solid blue;
+            float: left;
+            box-sizing: border-box;
+
+        }
+
+        .path4 {
+            height: 306px;
+            width: 168px;
+            border: 2px solid white;
+            float: left;
+        }
+
+        .boxyellow {
+            height: 306px;
+            width: 311px;
+            border: 35px solid yellow;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 277px;
+            width: 52.5px;
+            border: 2px solid black;
+            float: left;
+        }
+
+        .box2 {
+            height: 300px;
+            width: 52.5px;
+            border: 2px solid black;
+            float: left;
+        }
+
+        .boxbuttom {
+            height: 47px;
+            width: 52px;
+            border: 2px solid black;
+
+        }
+
+        .boxbuttom4 {
+            height: 47px;
+            width: 52px;
+            border: 2px solid black;
+            background-color: blue;
+
+        }
+
+        .boxbuttom6 {
+            height: 47px;
+            width: 52px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+
+        .boxbuttom1 {
+            height: 43px;
+            width: 52px;
+            border: 2px solid black;
+
+        }
+
+        .boxbuttom3 {
+            height: 43px;
+            width: 52px;
+            border: 2px solid black;
+            background-color: green;
+        }
+
+        .boxbuttom6 {
+            height: 47px;
+            width: 52px;
+            border: 2px solid black;
+
+        }
+
+        .boxbuttom5 {
+            height: 47px;
+            width: 52px;
+            border: 2px solid black;
+            background-color: npne;
+        }
+
+        .boxbuttom9 {
+            height: 43px;
+            width: 52px;
+            border: 2px solid black;
+            background-color: green;
+        }
+
+        .boxbuttom8 {
+            height: 43px;
+            width: 52px;
+            border: 2px solid black;
+
+        }
+
+        .boxbuttom7 {
+            height: 43px;
+            width: 52px;
+            border: 2px solid black;
+            background-color: green;
+        }
+
+
+
+        .redrow {
+            height: 33px;
+            width: 309px;
+            border: 2px solid black;
+
+        }
+
+        .redrewbox {
+            height: 30px;
+            width: 48px;
+            border: 2px solid black;
+            float: left;
+
+        }
+
+        .redrewbox12 {
+            height: 30px;
+            width: 48px;
+            border: 2px solid black;
+            float: left;
+            background-color: yellow;
+
+        }
+
+        .redrewbox13 {
+            height: 30px;
+            width: 48px;
+            border: 2px solid black;
+            float: left;
+
+        }
+
+        .redrewbox1 {
+            height: 30px;
+            width: 48px;
+            border: 2px solid black;
+            float: left;
+            background-color: red;
+        }
+
+        .redrewbox2 {
+            height: 30px;
+            width: 48px;
+            border: 2px solid black;
+            float: left;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="row1">
+            <div class="boxred">
+                <div class="red"></div>
+                <div class="red"></div>
+                <div class="red"></div>
+                <div class="red"></div>
+
+            </div>
+            <div class="path1">
+                <div class="box">
+                    <div class="boxbuttom1"></div>
+                    <div class="boxbuttom1"></div>
+                    <div class="boxbuttom1"></div>
+                    <div class="boxbuttom1"></div>
+                    <div class="boxbuttom1"></div>
+                    <div class="boxbuttom1"></div>
+                </div>
+                <div class="box">
+                    <div class="boxbuttom8"></div>
+                    <div class="boxbuttom9"></div>
+                    <div class="boxbuttom9"></div>
+                    <div class="boxbuttom9"></div>
+                    <div class="boxbuttom9"></div>
+                    <div class="boxbuttom9"></div>
+                </div>
+                <div class="box">
+                    <div class="boxbuttom1"></div>
+                    <div class="boxbuttom3"></div>
+                    <div class="boxbuttom1"></div>
+                    <div class="boxbuttom1"></div>
+                    <div class="boxbuttom1"></div>
+                    <div class="boxbuttom1"></div>
+                </div>
+
+            </div>
+            <div class="boxgreen">
+                <div class="green"></div>
+                <div class="green"></div>
+                <div class="green"></div>
+                <div class="green"></div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="path2">
+                <div class="redrow">
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox1"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                </div>
+                <div class="redrow">
+                    <div class="redrewbox2"></div>
+                    <div class="redrewbox1"></div>
+                    <div class="redrewbox1"></div>
+                    <div class="redrewbox1"></div>
+                    <div class="redrewbox1"></div>
+                    <div class="redrewbox1"></div>
+                </div>
+                <div class="redrow">
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                </div>
+            </div>
+            <div class="mainbox">
+                <div class="mainboxcolor"></div>
+
+
+
+            </div>
+            <div class="path3">
+                <div class="redrow">
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                </div>
+                <div class="redrow">
+                    <div class="redrewbox12"></div>
+                    <div class="redrewbox12"></div>
+                    <div class="redrewbox12"></div>
+                    <div class="redrewbox12"></div>
+                    <div class="redrewbox12"></div>
+                    <div class="redrewbox13"></div>
+                </div>
+                <div class="redrow">
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox"></div>
+                    <div class="redrewbox12"></div>
+                    <div class="redrewbox"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="boxblue">
+                <div class="blue"></div>
+                <div class="blue"></div>
+                <div class="blue"></div>
+                <div class="blue"></div>
+
+            </div>
+            <div class="path4">
+                <div class="boxdivision">
+                    <div class="box2">
+                        <div class="boxbuttom"></div>
+                        <div class="boxbuttom"></div>
+                        <div class="boxbuttom"></div>
+                        <div class="boxbuttom"></div>
+                        <div class="boxbuttom4"></div>
+                        <div class="boxbuttom"></div>
+                    </div>
+                    <div class="box2">
+                        <div class="boxbuttom6"></div>
+                        <div class="boxbuttom6"></div>
+                        <div class="boxbuttom6"></div>
+                        <div class="boxbuttom6"></div>
+                        <div class="boxbuttom6"></div>
+                        <div class="boxbuttom5"></div>
+                    </div>
+                    <div class="box2">
+                        <div class="boxbuttom"></div>
+                        <div class="boxbuttom"></div>
+                        <div class="boxbuttom"></div>
+                        <div class="boxbuttom"></div>
+                        <div class="boxbuttom"></div>
+                        <div class="boxbuttom"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxyellow">
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
